@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +9,65 @@
     <link rel="stylesheet" href="CSS/styles.css">
     <script src="JS/script.js" defer></script>
 </head>
+
 <body>
-    <h1>olá</h1>
+    <div id="gerador-sombra">
+        <div id="container-controle">
+            <h2>Configurações da Box-shadow:</h2>
+            <div class="formulario-controle">
+                <div class="entrada">
+                    <label for="horizontal">Deslocamento horizontal:</label>
+                    <input type="range" value="horizontal" name="horizontal" min="-100" max="100" value="5">
+                </div>
+                <div class="input-referencia">
+                    <input type="text" id="horizontal-value" name="horizontal-value">
+                    <p>px</p>
+                </div>
+            </div>
+            <div class="formulario-controle">
+                <div class="entrada">
+                    <label for="vertical">Deslocamento vertical:</label>
+                    <input type="range" value="vertical" name="vertical" min="-100" max="100" value="5">
+                </div>
+                <div class="input-referencia">
+                    <input type="text" id="vertical" name="vertical">
+                    <p>px</p>
+                </div>
+            </div>
+            <div class="formulario-controle">
+                <div class="entrada">
+                    <label for="blur">Intensidade do borrão (Blur):</label>
+                    <input type="range" value="blur" name="blur" min="0" max="100" value="10">
+                </div>
+                <div class="input-referencia">
+                    <input type="text" id="blur-value" name="blur-value">
+                    <p>px</p>
+                </div>
+            </div>
+            <div class="formulario-controle">
+                <div class="entrada">
+                    <label for="Spread">Intensidade do espalhamento (Spread):</label>
+                    <input type="range" value="Spread" name="Spread" min="-100" max="100" value="3">
+                </div>
+                <div class="input-referencia">
+                    <input type="text" id="Spread-value" name="Spread-value">
+                    <p>px</p>
+                </div>
+            </div>
+        </div>
+        <div class="visualizacao">
+            <h2>Visualização do efeito gerado: </h2>
+            <div class="caixa"></div>
+        </div>
+    </div>
+    <div id="regra-gerada">
+        <h2>Copie e cole no seu arquivo de CSS:</h2>
+        <div id="area-regras">
+            <p id="regra">box-shadow <span></span></p>
+            <p id="webkit-regra">-webkit-box-shadow <span></span></p>
+            <p id="moz-regra">-moz-box-shadow <span></span></p>
+        </div>
+    </div>
 </body>
+
 </html>
